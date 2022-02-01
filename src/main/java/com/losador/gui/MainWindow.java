@@ -29,11 +29,13 @@ public class MainWindow {
         JTextArea loginArea = new JTextArea("Username: ");
         loginArea.setFont(BigFontTR);
         loginArea.setBackground(null);
+        loginArea.setEditable(false);
         loginArea.setBounds(frame.getWidth()/2 - 210, frame.getHeight()/2 - 80, 100, 30);
         frame.add(loginArea);
         JTextArea passArea = new JTextArea("Password:");
         passArea.setFont(BigFontTR);
         passArea.setBackground(null);
+        passArea.setEditable(false);
         passArea.setBounds(frame.getWidth()/2 - 210, frame.getHeight()/2 - 20, 100, 30);
         frame.add(passArea);
         loginButton = new JButton("LOG IN");
